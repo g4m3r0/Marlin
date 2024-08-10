@@ -41,7 +41,7 @@
 // #define D01_V8_220_TITAN_TMC_NO_ABL 1
 
 // XY2 Thanks to Emmanuel Hayez!
-// #define XY2_V6_255_NO_TITAN_TMC 1
+#define XY2_V6_255_NO_TITAN_TMC 1
 // #define XY2_V6_255_TITAN_TMC 1
 // #define XY2_V6_255_BMG_TMC 1
 // #define XY2_V6_255M_BMG_TMC 1
@@ -59,7 +59,7 @@
 
 // #define TFT_LVGL_UI
 // #define TFT_CLASSIC_UI
-// #define TFT_COLOR_UI
+#define TFT_COLOR_UI
 
 #if V6_330_TITAN_TMC
   #define MOTHERBOARD BOARD_CHITU3D_V6
@@ -983,7 +983,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200
+#define EXTRUDE_MAXLENGTH 500
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -1707,7 +1707,7 @@
 #endif
 
 #if EITHER(MIN_SOFTWARE_ENDSTOPS, MAX_SOFTWARE_ENDSTOPS)
-  //#define SOFT_ENDSTOPS_MENU_ITEM  // Enable/Disable software endstops from the LCD
+  #define SOFT_ENDSTOPS_MENU_ITEM  // Enable/Disable software endstops from the LCD
 #endif
 
 /**
